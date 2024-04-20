@@ -1,0 +1,28 @@
+{
+  "name": "tracking-contract-deploy",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lucasdcoutinh0/tracking-contract-deploy.git"
+  },
+  "keywords": [],
+  "author": "Lucas Coutinho",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lucasdcoutinh0/tracking-contract-deploy/issues"
+  },
+  "homepage": "https://github.com/lucasdcoutinh0/tracking-contract-deploy#readme",
+  "dependencies": {
+    "@types/node": "^20.12.7",
+    "dotenv": "^16.4.5",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.5",
+    "web3": "^4.8.0",
+    "ws": "^8.16.0"
+  },
+  "description": ""
+}
