@@ -8,9 +8,9 @@ interface LogResult {
 }
 
 const RPC_ADDRESS: string | undefined = process.env.NODE_RPC_ADDRESS;
-const CONTRACT_ADDRESS: string | undefined = process.env.NODE_CONTRACT_ADDRESS
+const CONTRACT_ADDRESS: string | undefined = process.env.NODE_CONTRACT_ADDRESS;
 const webSocketUrl: string = RPC_ADDRESS || "";
-const erc721Address: string = CONTRACT_ADDRESS || ""
+const erc721Address: string = CONTRACT_ADDRESS || "";
 
 const web3: Web3 = new Web3(new Web3.providers.WebsocketProvider(webSocketUrl));
 
