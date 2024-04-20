@@ -7,9 +7,10 @@ interface LogResult {
   topics: string[];
 }
 
-const API_KEY: string | undefined = process.env.NODE_API_KEY;
-const webSocketUrl: string = `wss://polygon-amoy.g.alchemy.com/v2/${API_KEY}`;
-const erc721Address: string = "0xE2c4138D294729a09070cb33f1fD485221291ac0";
+const RPC_ADDRESS: string | undefined = process.env.NODE_RPC_ADDRESS;
+const CONTRACT_ADDRESS: string | undefined = process.env.NODE_CONTRACT_ADDRESS
+const webSocketUrl: string = RPC_ADDRESS || "";
+const erc721Address: string = CONTRACT_ADDRESS || ""
 
 const web3: Web3 = new Web3(new Web3.providers.WebsocketProvider(webSocketUrl));
 
